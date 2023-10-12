@@ -12,6 +12,6 @@ export class GetAtaaRecordsComponent implements OnInit{
   constructor(private getRecordsService: GetAtaaRecordsServiceService) {}
 
   ngOnInit() {
-    this.getRecordsService.getRecords().subscribe((data)=>{})
+    this.getRecordsService.getRecords().subscribe((data)=>{this.ataaRecords = data})
   }
 }
